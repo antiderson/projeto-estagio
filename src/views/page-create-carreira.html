@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap"  
           rel="stylesheet">
 
-    <title>Proffy | Cadastro de curso</title>
+    <title>Proffy | Cadastro de Carreira</title>
 </head>
 <body id="page-give-classes">
 
@@ -33,8 +33,8 @@
             </div>
 
             <div class="header-content">
-                <strong>Cadastro de Cursos</strong>
-                <p>Preencha os campos com a descrição dos cursos</p>
+                <strong>Cadastro de Carreiras</strong>
+                <p>Preencha os campos com a descrição da Carreira</p>
 
             </div>
         </header>
@@ -44,47 +44,34 @@
             <form action="" id="create-class" method="post">
                 <fieldset>
 
-                    <legend>Dados do curso</legend>
+                    <legend>Dados da Carreira</legend>
 
                     <div class="input-block">
-                        <label for="name">Titulo/Nome do curso</label>
+                        <label for="name">Titulo/Nome da Carreira</label>
                         <input type="text" name="name" id="name" required>
                     </div>
 
-                    <div class="input-block">
-                        <label for="avatar">Link do curso<small>(comece com https://)</small></label>
-                        <input type="url" name="avatar" id="avatar" required>
-                    </div>
-
                     <div class="textarea-block">
-                        <label for="bio">Descrição do curso</label>
+                        <label for="bio">Descrição da Carreira</label>
                         <textarea name="bio" id="bio" required></textarea>
                     </div>
 
-                </fieldset>
+                    <div class="input-block">
+                        <label for="name">Linguagem Usada</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
 
-                <fieldset id="schedule-items">
-                    <legend>Nível e carga horaria
-                    </legend>
+                    <div class="textarea-block">
+                        <label for="bio">Bibliotecas e Ferramentas</label>
+                        <textarea name="bio" id="bio" required></textarea>
+                    </div>
 
-                    <div class="schedule-item">
-                        <div class="select-block">
-                            <label for="weekday">Nível do curso</label>
-                            <select name="weekday[]" required>
-                                <option value="" disabled="" hidden="">Selecione uma opção</option>
-                                <option value="0">Básico</option>
-                                <option value="1">Intermediário</option>
-                                <option value="2">Avançado</option>
-                            </select>
-                        </div>
-
-                        <div class="input-block">
-                            <label for="time-from">Duração do curso</label>
-                            <input type="time" neme="time-from[] required">
-                        </div>
-
+                    <div class="input-block">
+                        <label for="name">Salario</label>
+                        <input type="text" name="name" id="name" required>
                     </div>
                 </fieldset>
+
             </form>
 
             <footer>
@@ -93,7 +80,7 @@
                     Importante!<br>
                     Preencha todos os dados
                 </p>
-                <button type="submit" form="create-class">Salvar cadastro</button>
+                <button type="submit" form="create-class">Salvar Carreira</button>
             </footer>
 
         </main>

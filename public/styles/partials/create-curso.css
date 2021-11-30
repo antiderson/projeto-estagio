@@ -60,6 +60,7 @@
 
 #page-give-classes .input-block+.input-block,
 #page-give-classes .input-block+.textarea-block,
+#page-give-classes .input-block+.linguagem-block,
 #page-give-classes .select-block+.input-block {
     margin-top: 2.4rem;
 }
@@ -79,7 +80,7 @@
 
     font-size: 1.4rem;
     line-height: 2.4rem;
-
+    margin-right: 2rem;
     color: var(--color-box-complement)
 }
 

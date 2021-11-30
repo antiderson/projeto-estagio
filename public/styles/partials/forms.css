@@ -1,6 +1,7 @@
 
 .select-block label,
 .input-block label,
+.linguagem-block,
 .textarea-block label {
     font-size: 1.4rem;
     color: var(--color-text-complement);
@@ -8,6 +9,7 @@
 
 .input-block input,
 .select-block select,
+.linguagem-block,
 .textarea-block textarea {
     width: 100%;
     height: 5.6rem;
@@ -27,15 +29,24 @@
     resize: vertical;
 }
 
+.linguagem-block textarea {
+    padding: 1.2rem 1.6rem;
+    height: 16rem;
+
+    resize: vertical;
+}
+
 .input-block,
 .select-block,
-.textarea-block,
+.textarea-block
+.linguagem-block,
 option {
     position: relative;
 }
 
 .input-block:focus-within::after,
 .select-block:focus-within::after,
+.linguagem-block:focus-within::after
 .textarea-block:focus-within::after {
     content: "";
     width: calc(100% - 3.2rem);
